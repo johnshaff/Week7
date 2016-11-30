@@ -1,28 +1,31 @@
 //
-//  HotelsViewController.m
+//  RoomsViewController.m
 //  CoreDataHotelService
 //
-//  Created by Adam Wallraff on 11/28/16.
+//  Created by John Shaff on 11/28/16.
 //  Copyright © 2016 Adam Wallraff. All rights reserved.
 //
 
-#import "ViewController.h"
 #import "RoomsViewController.h"
-
-#import "HotelsViewController.h"
 #import "AutoLayout.h"
 
 #import "AppDelegate.h"
-#import "Hotel+CoreDataClass.h"
+#import "Room+CoreDataProperties.h"
 
-@interface HotelsViewController ()<UITableViewDataSource, UITableViewDelegate>
+
+
+
+
+
+@interface RoomsViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property(strong, nonatomic)NSArray *dataSource;
 @property(strong, nonatomic) UITableView *tableView;
 
+
 @end
 
-@implementation HotelsViewController
+@implementation RoomsViewController
 
 -(void)loadView{
     [super loadView];
@@ -44,9 +47,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setTitle:@"Hotels"];
-    
+    [self setTitle:@"Rooms"];
+
+
+
 }
+
 
 -(NSArray *)dataSource{
     
@@ -55,21 +61,20 @@
         
         NSManagedObjectContext *context = delegate.persistentContainer.viewContext;
         
-        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Hotel"];
+        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Room"];
         
         
         NSError *fetchError;
         _dataSource = [context executeFetchRequest:request error:&fetchError];
         
         if(fetchError){
-            NSLog(@"Error Fetching Hotels from Core Data");
+            NSLog(@"Error Fetching Rooms from Core Data");
         }
     }
     
     return _dataSource;
-
+    
 }
-
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -80,48 +85,20 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
-    Hotel *hotel = self.dataSource[indexPath.row];
+    Room *room = self.dataSource[indexPath.row];
     
-    cell.textLabel.text = hotel.name;
+    cell.textLabel.text = [@(room.number) stringValue];
+//    cell.textLabel.text = [NSString stringWithFormat:@"%hd", room.number];
     
     return cell;
     
 }
 
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataSource.count;
-    
 }
 
 
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    Hotel *hotel = self.dataSource[indexPath.row];
-    RoomsViewController *roomsVC = [[RoomsViewController alloc]init];
-
-    [self.navigationController pushViewController:roomsVC animated:YES];
-}
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
