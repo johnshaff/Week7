@@ -7,12 +7,18 @@
 //
 
 #import "AutoLayout.h"
+#import "DatePickerViewController.h"
+
 
 #import "ViewController.h"
 #import "HotelsViewController.h"
+#import "RoomsViewController.h"
+
 
 
 #import "Hotel+CoreDataClass.h"
+#import "Room+CoreDataClass.h"
+
 
 @interface ViewController ()
 
@@ -76,6 +82,7 @@
     
     [browseButton addTarget:self action:@selector(browseButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     
+    [bookButton addTarget:self action:@selector(bookButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -86,6 +93,14 @@
     [self.navigationController pushViewController:hotelsVC animated:YES];
     
 }
+
+-(void) bookButtonSelected:(UIButton *)sender{
+    
+    DatePickerViewController *datePickerVC = [[DatePickerViewController alloc]init];
+    
+    [self.navigationController pushViewController:datePickerVC animated:YES];
+}
+
 
 
 -(UIButton *)createButtonWithTitle:(NSString *)title andBackgroundColor:(UIColor *)color{
