@@ -15,6 +15,8 @@
 
 @property(strong, nonatomic) Room *room;
 @property(strong, nonatomic) NSDate *endDate;
+@property(strong, nonatomic) NSDate *startDate;
+
 
 
 @end

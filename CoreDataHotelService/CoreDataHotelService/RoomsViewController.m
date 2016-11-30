@@ -63,7 +63,6 @@
         
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Room"];
         
-        
         NSError *fetchError;
         _dataSource = [context executeFetchRequest:request error:&fetchError];
         

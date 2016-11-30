@@ -20,7 +20,10 @@
 @interface BookViewController ()
 
 
-@property(strong, nonatomic) UITextField *nameField;
+@property(strong, nonatomic) UITextField *firstName;
+@property(strong, nonatomic) UITextField *lastName;
+@property(strong, nonatomic) UITextField *email;
+
 
 @end
 
@@ -36,7 +39,7 @@
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
     [self setupMessageLabel];
-    [self setupNameTextField];
+    [self setupTextFields];
     
     UIBarButtonItem *saveButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemSave
                                                                           target:self
@@ -68,25 +71,35 @@
     
 }
 
--(void)setupNameTextField {
-    self.nameField = [[UITextField alloc]init];
-    self.nameField.placeholder = @"Please enter your name";
+-(void)setupTextFields {
+    self.firstName = [[UITextField alloc]init];
+    self.firstName.placeholder = @"Please enter your first name";
+    [self.firstName setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self.view addSubview:self.firstName];
     
-    [self.nameField setTranslatesAutoresizingMaskIntoConstraints:NO];
+    self.lastName = [[UITextField alloc]init];
+    self.lastName.placeholder = @"Please enter your last name";
+    [self.lastName setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self.view addSubview:self.lastName];
     
-    [self.view addSubview:self.nameField];
+    self.email = [[UITextField alloc]init];
+    self.email.placeholder = @"Please enter your email";
+    [self.email setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self.view addSubview:self.email];
     
+    
+    
+    //CONSTRAINTS
     CGFloat myMargin = 20.0;
     CGFloat navAndStatusBarHeight = CGRectGetHeight(self.navigationController.navigationBar.frame) + 20.0;
     
-    NSLayoutConstraint *top = [AutoLayout createGenericConstraintFrom:self.nameField toView:self.view withAttribute:NSLayoutAttributeTop];
+    NSLayoutConstraint *top = [AutoLayout createGenericConstraintFrom:self.firstName toView:self.view withAttribute:NSLayoutAttributeTop];
     top.constant = navAndStatusBarHeight + myMargin;
     
-    
-    NSLayoutConstraint *leading = [AutoLayout createLeadingConstraintFrom:self.nameField toView:self.view];
+    NSLayoutConstraint *leading = [AutoLayout createLeadingConstraintFrom:self.firstName toView:self.view];
     leading.constant = myMargin;
     
-    NSLayoutConstraint *trailing = [AutoLayout createTrailingConstraintFrom:self.nameField toView:self.view];
+    NSLayoutConstraint *trailing = [AutoLayout createTrailingConstraintFrom:self.firstName toView:self.view];
     trailing.constant = -myMargin;
     
 }
@@ -96,20 +109,25 @@
     NSManagedObjectContext *context = appDelegate.persistentContainer.viewContext;
     
     Reservation *reservation = [NSEntityDescription insertNewObjectForEntityForName:@"Reservation" inManagedObjectContext:context];
-    reservation.startDate = [NSDate date];
+    reservation.startDate = self.startDate;
     reservation.endDate = self.endDate;
     reservation.room = self.room;
     
     self.room.reservations = [self.room.reservations setByAddingObject:reservation];
     
     reservation.guest = [NSEntityDescription insertNewObjectForEntityForName:@"Guest" inManagedObjectContext:context];
-    reservation.guest.name = self.nameField.text;
+    reservation.guest.firstName = self.firstName.text;
+    reservation.guest.firstName = self.lastName.text;
+    reservation.guest.email = self.email.text;
+
+
+    
     
     NSError *saveError;
     [context save:&saveError];
     
     if(saveError){
-        NSLog(@"There was an wrror saving new reservation");
+        NSLog(@"There was an error saving new reservation");
 
     } else {
         NSLog(@"Saved Reservation");
