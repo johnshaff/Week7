@@ -90,17 +90,23 @@
     
     
     //CONSTRAINTS
-    CGFloat myMargin = 20.0;
-    CGFloat navAndStatusBarHeight = CGRectGetHeight(self.navigationController.navigationBar.frame) + 20.0;
     
-    NSLayoutConstraint *top = [AutoLayout createGenericConstraintFrom:self.firstName toView:self.view withAttribute:NSLayoutAttributeTop];
-    top.constant = navAndStatusBarHeight + myMargin;
     
-    NSLayoutConstraint *leading = [AutoLayout createLeadingConstraintFrom:self.firstName toView:self.view];
-    leading.constant = myMargin;
+    [AutoLayout createTrailingConstraintFrom:self.firstName toView:self.view];
+    [AutoLayout createLeadingConstraintFrom:self.firstName toView:self.view];
+    NSLayoutConstraint *firstNameTopConstraint = [AutoLayout createGenericConstraintFrom:self.firstName toView:self.view withAttribute:NSLayoutAttributeTop];
+    firstNameTopConstraint.constant = [self navBarAndStatusBarHeight];
     
-    NSLayoutConstraint *trailing = [AutoLayout createTrailingConstraintFrom:self.firstName toView:self.view];
-    trailing.constant = -myMargin;
+    
+    [AutoLayout createTrailingConstraintFrom:self.lastName toView:self.view];
+    [AutoLayout createLeadingConstraintFrom:self.lastName toView:self.view];
+    NSLayoutConstraint *lastNameTopConstraint = [AutoLayout createTopToBottomRelationFrom:self.lastName toView:self.firstName];
+    lastNameTopConstraint.constant = [self navBarAndStatusBarHeight];
+    
+    [AutoLayout createTrailingConstraintFrom:self.email toView:self.view];
+    [AutoLayout createLeadingConstraintFrom:self.email toView:self.view];
+    NSLayoutConstraint *emailTopConstraint = [AutoLayout createTopToBottomRelationFrom:self.email toView:self.lastName];
+    emailTopConstraint.constant = [self navBarAndStatusBarHeight];
     
 }
 
@@ -120,8 +126,6 @@
     reservation.guest.firstName = self.lastName.text;
     reservation.guest.email = self.email.text;
 
-
-    
     
     NSError *saveError;
     [context save:&saveError];
@@ -135,6 +139,11 @@
     }
     
 }
+
+-(CGFloat)navBarAndStatusBarHeight{
+    return CGRectGetHeight(self.navigationController.navigationBar.frame) + 20.0;
+}
+
 
 
 @end

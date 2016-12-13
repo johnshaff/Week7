@@ -13,6 +13,7 @@
 #import "ViewController.h"
 #import "HotelsViewController.h"
 #import "RoomsViewController.h"
+#import "LookUpViewController.h"
 
 
 
@@ -83,6 +84,9 @@
     [browseButton addTarget:self action:@selector(browseButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     
     [bookButton addTarget:self action:@selector(bookButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [lookupButton addTarget:self action:@selector(lookUpButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+
 }
 
 
@@ -101,6 +105,35 @@
     [self.navigationController pushViewController:datePickerVC animated:YES];
 }
 
+//-(void)lookUpButtonSelected:(UIButton *)sender{
+//    
+//    LookUpViewController *lookUpVC = [[LookUpViewController alloc]init];
+//    
+//    [self.navigationController pushViewController:lookUpVC animated:YES];
+//    
+//}
+
+
+//MARK: WEEK 9 ASSIGNMENT CODE
+-(void)lookUpButtonSelected:(UIButton *)sender{
+    
+    LookUpViewController *lookUpVC = [[LookUpViewController alloc]init];
+    
+    [self setupChildController:lookUpVC];
+    
+
+}
+
+-(void)setupChildController:(UIViewController *)childViewController{
+    
+    [self addChildViewController:childViewController];
+    
+    childViewController.view.frame = self.view.frame;
+    
+    [self.view addSubview:childViewController.view];
+    [childViewController didMoveToParentViewController:self];
+    
+}
 
 
 -(UIButton *)createButtonWithTitle:(NSString *)title andBackgroundColor:(UIColor *)color{

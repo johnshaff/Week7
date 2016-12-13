@@ -62,9 +62,9 @@
     startTopConstraint.constant = [self navBarAndStatusBarHeight];
     
     
-    [AutoLayout createTrailingConstraintFrom:self.endPicker toView:self.startPicker];
-    [AutoLayout createLeadingConstraintFrom:self.endPicker toView:self.startPicker];
-   NSLayoutConstraint *endTopConstraint = [AutoLayout createGenericConstraintFrom:self.endPicker toView:self.startPicker withAttribute:NSLayoutAttributeTop];
+    [AutoLayout createTrailingConstraintFrom:self.endPicker toView:self.view];
+    [AutoLayout createLeadingConstraintFrom:self.endPicker toView:self.view];
+    NSLayoutConstraint *endTopConstraint = [AutoLayout createTopToBottomRelationFrom:self.endPicker toView:self.startPicker];
     endTopConstraint.constant = [self navBarAndStatusBarHeight];
     
 }

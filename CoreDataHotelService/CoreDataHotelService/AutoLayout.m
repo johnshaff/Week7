@@ -94,6 +94,23 @@
     return [AutoLayout createGenericConstraintFrom:view toView:otherView withAttribute:NSLayoutAttributeHeight andMultiplier:multiplier];
 }
 
+
++(NSLayoutConstraint *)createTopToBottomRelationFrom:(UIView *)view toView:(UIView *)superView{
+    
+    NSLayoutConstraint *constraint = [NSLayoutConstraint
+                                      constraintWithItem:view
+                                      attribute:NSLayoutAttributeTop
+                                      relatedBy:NSLayoutRelationEqual
+                                      toItem:superView
+                                      attribute:NSLayoutAttributeBottom
+                                      multiplier:1.0
+                                      constant:0.0];
+    
+    constraint.active = YES;
+    return constraint;
+}
+  
+  
 @end
 
 
