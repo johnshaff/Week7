@@ -7,12 +7,19 @@
 //
 
 #import "AutoLayout.h"
+#import "DatePickerViewController.h"
+
 
 #import "ViewController.h"
 #import "HotelsViewController.h"
+#import "RoomsViewController.h"
+#import "LookUpViewController.h"
+
 
 
 #import "Hotel+CoreDataClass.h"
+#import "Room+CoreDataClass.h"
+
 
 @interface ViewController ()
 
@@ -76,6 +83,10 @@
     
     [browseButton addTarget:self action:@selector(browseButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
     
+    [bookButton addTarget:self action:@selector(bookButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [lookupButton addTarget:self action:@selector(lookUpButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+
 }
 
 
@@ -84,6 +95,43 @@
     HotelsViewController *hotelsVC = [[HotelsViewController alloc]init];
     
     [self.navigationController pushViewController:hotelsVC animated:YES];
+    
+}
+
+-(void) bookButtonSelected:(UIButton *)sender{
+    
+    DatePickerViewController *datePickerVC = [[DatePickerViewController alloc]init];
+    
+    [self.navigationController pushViewController:datePickerVC animated:YES];
+}
+
+//-(void)lookUpButtonSelected:(UIButton *)sender{
+//    
+//    LookUpViewController *lookUpVC = [[LookUpViewController alloc]init];
+//    
+//    [self.navigationController pushViewController:lookUpVC animated:YES];
+//    
+//}
+
+
+//MARK: WEEK 9 ASSIGNMENT CODE
+-(void)lookUpButtonSelected:(UIButton *)sender{
+    
+    LookUpViewController *lookUpVC = [[LookUpViewController alloc]init];
+    
+    [self setupChildController:lookUpVC];
+    
+
+}
+
+-(void)setupChildController:(UIViewController *)childViewController{
+    
+    [self addChildViewController:childViewController];
+    
+    childViewController.view.frame = self.view.frame;
+    
+    [self.view addSubview:childViewController.view];
+    [childViewController didMoveToParentViewController:self];
     
 }
 

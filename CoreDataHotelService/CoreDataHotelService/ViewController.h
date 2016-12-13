@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+-(void)browseButtonSelected:(UIButton *)sender;
 
 @end
 

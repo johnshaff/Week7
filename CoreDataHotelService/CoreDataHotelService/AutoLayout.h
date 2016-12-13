@@ -23,6 +23,7 @@
 +(NSLayoutConstraint *)createEqualHeightConstraintFrom:(UIView *)view toView:(UIView *)otherView;
 +(NSLayoutConstraint *)createEqualHeightConstraintFrom:(UIView *)view toView:(UIView *)otherView withMultiplier:(CGFloat)multiplier;
 
++(NSLayoutConstraint *)createTopToBottomRelationFrom:(UIView *)view toView:(UIView *)superView;
 
 
 

@@ -18,9 +18,31 @@
 		1ADAECA21DECD945008DEE37 /* hotels.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ADAEC9F1DECD945008DEE37 /* hotels.json */; };
 		1ADAECA31DECD945008DEE37 /* room.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADAECA01DECD945008DEE37 /* room.png */; };
 		1ADAECA61DECEEF6008DEE37 /* HotelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAECA51DECEEF6008DEE37 /* HotelsViewController.m */; };
+		33E26DE0D86AFFFD6D89163E /* libPods-CoreDataHotelService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CAD9FDAB23D3CADCDEE2F5 /* libPods-CoreDataHotelService.a */; };
+		501306901DED02B7001D22B0 /* RoomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5013068F1DED02B7001D22B0 /* RoomsViewController.m */; };
+		5073EB831DEDF7540005A5E0 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB821DEDF7540005A5E0 /* DatePickerViewController.m */; };
+		5073EB861DEE113C0005A5E0 /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB851DEE113C0005A5E0 /* AvailabilityViewController.m */; };
+		5073EB891DEE1D430005A5E0 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5073EB881DEE1D430005A5E0 /* BookViewController.m */; };
+		507DA4C01DF1E80800C184F0 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 507DA4BF1DF1E80800C184F0 /* CustomTableViewCell.m */; };
+		50B3106A1DEF527B00F90A16 /* CoreDataHotelServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B310691DEF527B00F90A16 /* CoreDataHotelServiceTests.m */; };
+		50B310721DEF551300F90A16 /* AutoLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B310711DEF551300F90A16 /* AutoLayoutTest.m */; };
+		50B310751DEF87CF00F90A16 /* LookUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B310741DEF87CF00F90A16 /* LookUpViewController.m */; };
+		EDF312A91A12F8FBC850D81C /* libPods-CoreDataHotelServiceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C0412436279CC05C44225E /* libPods-CoreDataHotelServiceTests.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		50B3106C1DEF527B00F90A16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ADAEC761DEC9D73008DEE37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ADAEC7D1DEC9D73008DEE37;
+			remoteInfo = CoreDataHotelService;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		138001DE4FCECAF650297007 /* Pods-CoreDataHotelService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataHotelService.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataHotelService/Pods-CoreDataHotelService.release.xcconfig"; sourceTree = "<group>"; };
+		15F8427F29C44293B7EFE889 /* Pods-CoreDataHotelService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataHotelService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataHotelService/Pods-CoreDataHotelService.debug.xcconfig"; sourceTree = "<group>"; };
 		1ADAEC7E1DEC9D73008DEE37 /* CoreDataHotelService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataHotelService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADAEC821DEC9D73008DEE37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1ADAEC841DEC9D73008DEE37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,6 +60,27 @@
 		1ADAECA01DECD945008DEE37 /* room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = room.png; sourceTree = "<group>"; };
 		1ADAECA41DECEEF6008DEE37 /* HotelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelsViewController.h; sourceTree = "<group>"; };
 		1ADAECA51DECEEF6008DEE37 /* HotelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelsViewController.m; sourceTree = "<group>"; };
+		2F60C8FC5FA588FC8D95D13E /* Pods-CoreDataHotelServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataHotelServiceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataHotelServiceTests/Pods-CoreDataHotelServiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		40C0412436279CC05C44225E /* libPods-CoreDataHotelServiceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreDataHotelServiceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5013068E1DED02B7001D22B0 /* RoomsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomsViewController.h; sourceTree = "<group>"; };
+		5013068F1DED02B7001D22B0 /* RoomsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomsViewController.m; sourceTree = "<group>"; };
+		5073EB811DEDF7540005A5E0 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		5073EB821DEDF7540005A5E0 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		5073EB841DEE113C0005A5E0 /* AvailabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityViewController.h; sourceTree = "<group>"; };
+		5073EB851DEE113C0005A5E0 /* AvailabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityViewController.m; sourceTree = "<group>"; };
+		5073EB871DEE1D430005A5E0 /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		5073EB881DEE1D430005A5E0 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		507DA4BD1DF1E5B700C184F0 /* CoreDataHotelService1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataHotelService1.1.xcdatamodel; sourceTree = "<group>"; };
+		507DA4BE1DF1E80800C184F0 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		507DA4BF1DF1E80800C184F0 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		50B310671DEF527B00F90A16 /* CoreDataHotelServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataHotelServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B310691DEF527B00F90A16 /* CoreDataHotelServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataHotelServiceTests.m; sourceTree = "<group>"; };
+		50B3106B1DEF527B00F90A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B310711DEF551300F90A16 /* AutoLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutTest.m; sourceTree = "<group>"; };
+		50B310731DEF87CF00F90A16 /* LookUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookUpViewController.h; sourceTree = "<group>"; };
+		50B310741DEF87CF00F90A16 /* LookUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookUpViewController.m; sourceTree = "<group>"; };
+		74CAD9FDAB23D3CADCDEE2F5 /* libPods-CoreDataHotelService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreDataHotelService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB062056D40149F1A1B8ECD /* Pods-CoreDataHotelServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataHotelServiceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataHotelServiceTests/Pods-CoreDataHotelServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +88,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E26DE0D86AFFFD6D89163E /* libPods-CoreDataHotelService.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B310641DEF527B00F90A16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF312A91A12F8FBC850D81C /* libPods-CoreDataHotelServiceTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				1ADAEC801DEC9D73008DEE37 /* CoreDataHotelService */,
+				50B310681DEF527B00F90A16 /* CoreDataHotelServiceTests */,
 				1ADAEC7F1DEC9D73008DEE37 /* Products */,
+				EFB4A48DBA00C4CFFD4220C6 /* Pods */,
+				4899E5C7683F4A0E15628163 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				1ADAEC7E1DEC9D73008DEE37 /* CoreDataHotelService.app */,
+				50B310671DEF527B00F90A16 /* CoreDataHotelServiceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,15 +132,24 @@
 				1ADAEC881DEC9D73008DEE37 /* ViewController.m */,
 				1ADAECA41DECEEF6008DEE37 /* HotelsViewController.h */,
 				1ADAECA51DECEEF6008DEE37 /* HotelsViewController.m */,
+				5073EB811DEDF7540005A5E0 /* DatePickerViewController.h */,
+				5073EB821DEDF7540005A5E0 /* DatePickerViewController.m */,
+				5073EB871DEE1D430005A5E0 /* BookViewController.h */,
+				5073EB881DEE1D430005A5E0 /* BookViewController.m */,
+				5073EB841DEE113C0005A5E0 /* AvailabilityViewController.h */,
+				5073EB851DEE113C0005A5E0 /* AvailabilityViewController.m */,
+				50B310731DEF87CF00F90A16 /* LookUpViewController.h */,
+				50B310741DEF87CF00F90A16 /* LookUpViewController.m */,
+				507DA4BE1DF1E80800C184F0 /* CustomTableViewCell.h */,
+				507DA4BF1DF1E80800C184F0 /* CustomTableViewCell.m */,
+				5013068E1DED02B7001D22B0 /* RoomsViewController.h */,
+				5013068F1DED02B7001D22B0 /* RoomsViewController.m */,
 				1ADAEC9B1DECA2EC008DEE37 /* AutoLayout.h */,
 				1ADAEC9C1DECA2EC008DEE37 /* AutoLayout.m */,
 				1ADAEC901DEC9D73008DEE37 /* Assets.xcassets */,
 				1ADAEC921DEC9D73008DEE37 /* LaunchScreen.storyboard */,
 				1ADAEC951DEC9D73008DEE37 /* Info.plist */,
 				1ADAEC8D1DEC9D73008DEE37 /* CoreDataHotelService.xcdatamodeld */,
-				1ADAEC9E1DECD945008DEE37 /* hotel.png */,
-				1ADAEC9F1DECD945008DEE37 /* hotels.json */,
-				1ADAECA01DECD945008DEE37 /* room.png */,
 				1ADAEC811DEC9D73008DEE37 /* Supporting Files */,
 			);
 			path = CoreDataHotelService;
@@ -93,9 +158,42 @@
 		1ADAEC811DEC9D73008DEE37 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1ADAEC9E1DECD945008DEE37 /* hotel.png */,
+				1ADAEC9F1DECD945008DEE37 /* hotels.json */,
+				1ADAECA01DECD945008DEE37 /* room.png */,
 				1ADAEC821DEC9D73008DEE37 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4899E5C7683F4A0E15628163 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74CAD9FDAB23D3CADCDEE2F5 /* libPods-CoreDataHotelService.a */,
+				40C0412436279CC05C44225E /* libPods-CoreDataHotelServiceTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50B310681DEF527B00F90A16 /* CoreDataHotelServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				50B310711DEF551300F90A16 /* AutoLayoutTest.m */,
+				50B310691DEF527B00F90A16 /* CoreDataHotelServiceTests.m */,
+				50B3106B1DEF527B00F90A16 /* Info.plist */,
+			);
+			path = CoreDataHotelServiceTests;
+			sourceTree = "<group>";
+		};
+		EFB4A48DBA00C4CFFD4220C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15F8427F29C44293B7EFE889 /* Pods-CoreDataHotelService.debug.xcconfig */,
+				138001DE4FCECAF650297007 /* Pods-CoreDataHotelService.release.xcconfig */,
+				CEB062056D40149F1A1B8ECD /* Pods-CoreDataHotelServiceTests.debug.xcconfig */,
+				2F60C8FC5FA588FC8D95D13E /* Pods-CoreDataHotelServiceTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1ADAEC981DEC9D73008DEE37 /* Build configuration list for PBXNativeTarget "CoreDataHotelService" */;
 			buildPhases = (
+				0D4A13E97948A75933E69265 /* [CP] Check Pods Manifest.lock */,
 				1ADAEC7A1DEC9D73008DEE37 /* Sources */,
 				1ADAEC7B1DEC9D73008DEE37 /* Frameworks */,
 				1ADAEC7C1DEC9D73008DEE37 /* Resources */,
+				79DF1E58DE79391EF3C85FE5 /* [CP] Embed Pods Frameworks */,
+				A5298894F5D858D1D593E579 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -117,6 +218,27 @@
 			productName = CoreDataHotelService;
 			productReference = 1ADAEC7E1DEC9D73008DEE37 /* CoreDataHotelService.app */;
 			productType = "com.apple.product-type.application";
+		};
+		50B310661DEF527B00F90A16 /* CoreDataHotelServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B310701DEF527B00F90A16 /* Build configuration list for PBXNativeTarget "CoreDataHotelServiceTests" */;
+			buildPhases = (
+				18C22499FAF6E509B56C2698 /* [CP] Check Pods Manifest.lock */,
+				50B310631DEF527B00F90A16 /* Sources */,
+				50B310641DEF527B00F90A16 /* Frameworks */,
+				50B310651DEF527B00F90A16 /* Resources */,
+				3F65E4599CB95158EEE850AB /* [CP] Embed Pods Frameworks */,
+				1D05A1DF2F9DBA6C10E0F3FC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50B3106D1DEF527B00F90A16 /* PBXTargetDependency */,
+			);
+			name = CoreDataHotelServiceTests;
+			productName = CoreDataHotelServiceTests;
+			productReference = 50B310671DEF527B00F90A16 /* CoreDataHotelServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -131,6 +253,12 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = CX2BVPPB63;
 						ProvisioningStyle = Automatic;
+					};
+					50B310661DEF527B00F90A16 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 679533JEG9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1ADAEC7D1DEC9D73008DEE37;
 					};
 				};
 			};
@@ -148,6 +276,7 @@
 			projectRoot = "";
 			targets = (
 				1ADAEC7D1DEC9D73008DEE37 /* CoreDataHotelService */,
+				50B310661DEF527B00F90A16 /* CoreDataHotelServiceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -165,23 +294,146 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50B310651DEF527B00F90A16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D4A13E97948A75933E69265 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		18C22499FAF6E509B56C2698 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1D05A1DF2F9DBA6C10E0F3FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataHotelServiceTests/Pods-CoreDataHotelServiceTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F65E4599CB95158EEE850AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataHotelServiceTests/Pods-CoreDataHotelServiceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79DF1E58DE79391EF3C85FE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataHotelService/Pods-CoreDataHotelService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5298894F5D858D1D593E579 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataHotelService/Pods-CoreDataHotelService-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1ADAEC7A1DEC9D73008DEE37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5073EB831DEDF7540005A5E0 /* DatePickerViewController.m in Sources */,
 				1ADAEC891DEC9D73008DEE37 /* ViewController.m in Sources */,
+				507DA4C01DF1E80800C184F0 /* CustomTableViewCell.m in Sources */,
 				1ADAEC861DEC9D73008DEE37 /* AppDelegate.m in Sources */,
 				1ADAEC831DEC9D73008DEE37 /* main.m in Sources */,
+				5073EB861DEE113C0005A5E0 /* AvailabilityViewController.m in Sources */,
+				5073EB891DEE1D430005A5E0 /* BookViewController.m in Sources */,
 				1ADAECA61DECEEF6008DEE37 /* HotelsViewController.m in Sources */,
+				501306901DED02B7001D22B0 /* RoomsViewController.m in Sources */,
+				50B310751DEF87CF00F90A16 /* LookUpViewController.m in Sources */,
 				1ADAEC8F1DEC9D73008DEE37 /* CoreDataHotelService.xcdatamodeld in Sources */,
 				1ADAEC9D1DECA2EC008DEE37 /* AutoLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50B310631DEF527B00F90A16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B310721DEF551300F90A16 /* AutoLayoutTest.m in Sources */,
+				50B3106A1DEF527B00F90A16 /* CoreDataHotelServiceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50B3106D1DEF527B00F90A16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ADAEC7D1DEC9D73008DEE37 /* CoreDataHotelService */;
+			targetProxy = 50B3106C1DEF527B00F90A16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1ADAEC921DEC9D73008DEE37 /* LaunchScreen.storyboard */ = {
@@ -287,6 +539,7 @@
 		};
 		1ADAEC991DEC9D73008DEE37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F8427F29C44293B7EFE889 /* Pods-CoreDataHotelService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CX2BVPPB63;
@@ -299,6 +552,7 @@
 		};
 		1ADAEC9A1DEC9D73008DEE37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138001DE4FCECAF650297007 /* Pods-CoreDataHotelService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CX2BVPPB63;
@@ -306,6 +560,34 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamwallraff.CoreDataHotelService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50B3106E1DEF527B00F90A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEB062056D40149F1A1B8ECD /* Pods-CoreDataHotelServiceTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 679533JEG9;
+				INFOPLIST_FILE = CoreDataHotelServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnshaff.CoreDataHotelServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataHotelService.app/CoreDataHotelService";
+			};
+			name = Debug;
+		};
+		50B3106F1DEF527B00F90A16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F60C8FC5FA588FC8D95D13E /* Pods-CoreDataHotelServiceTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 679533JEG9;
+				INFOPLIST_FILE = CoreDataHotelServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnshaff.CoreDataHotelServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataHotelService.app/CoreDataHotelService";
 			};
 			name = Release;
 		};
@@ -328,6 +610,16 @@
 				1ADAEC9A1DEC9D73008DEE37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50B310701DEF527B00F90A16 /* Build configuration list for PBXNativeTarget "CoreDataHotelServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B3106E1DEF527B00F90A16 /* Debug */,
+				50B3106F1DEF527B00F90A16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -335,6 +627,7 @@
 		1ADAEC8D1DEC9D73008DEE37 /* CoreDataHotelService.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				507DA4BD1DF1E5B700C184F0 /* CoreDataHotelService1.1.xcdatamodel */,
 				1ADAEC8E1DEC9D73008DEE37 /* CoreDataHotelService.xcdatamodel */,
 			);
 			currentVersion = 1ADAEC8E1DEC9D73008DEE37 /* CoreDataHotelService.xcdatamodel */;

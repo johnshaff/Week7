@@ -6,6 +6,9 @@
 //  Copyright © 2016 Adam Wallraff. All rights reserved.
 //
 
+#import "ViewController.h"
+#import "RoomsViewController.h"
+
 #import "HotelsViewController.h"
 #import "AutoLayout.h"
 
@@ -87,6 +90,17 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataSource.count;
+    
+}
+
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Hotel *hotel = self.dataSource[indexPath.row];
+    RoomsViewController *roomsVC = [[RoomsViewController alloc]init];
+
+    [self.navigationController pushViewController:roomsVC animated:YES];
 }
 
 @end
