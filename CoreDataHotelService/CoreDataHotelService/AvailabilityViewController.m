@@ -26,6 +26,13 @@
 
 @implementation AvailabilityViewController
 
+
+
+
+
+
+
+
 -(NSFetchedResultsController *)availableRooms {
     if(!_availableRooms){
         AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
@@ -58,7 +65,6 @@
         [_availableRooms performFetch:&roomRequestError];
         
 
-        
         if(roomRequestError){
             NSLog(@"Error in requesting avail rooms");
         }
@@ -67,12 +73,15 @@
 }
 
 
+
+
 -(void)loadView{
     [super loadView];
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self setupTableView];
     [self setTitle:@"Rooms"];
+
     
      
 }
@@ -101,6 +110,7 @@
     if(!cell){
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
+    
     
     Room *room = [self.availableRooms objectAtIndexPath:indexPath];
     cell.textLabel.text = [NSString stringWithFormat:@"Room: %i(%ibeds, $%0.2f)", room.number, room.beds, room.rate.floatValue];

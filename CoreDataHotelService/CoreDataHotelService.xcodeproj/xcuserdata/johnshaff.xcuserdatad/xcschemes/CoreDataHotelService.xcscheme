@@ -38,6 +38,16 @@
                ReferencedContainer = "container:CoreDataHotelService.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "50F0E0451E04975F0054EE1B"
+               BuildableName = "TestsSuckaPlease.xctest"
+               BlueprintName = "TestsSuckaPlease"
+               ReferencedContainer = "container:CoreDataHotelService.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
